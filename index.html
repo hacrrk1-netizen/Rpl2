@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>IPL LIVE MARKET - DEMO</title>
+    <style>
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body { font-family: 'Segoe UI', sans-serif; background: #000; color: #fff; margin: 0; padding-bottom: 50px; }
+
+        /* Top Nav */
+        .top-nav { 
+            background: #111; padding: 12px 15px; display: flex; 
+            justify-content: space-between; align-items: center; 
+            border-bottom: 1px solid #333; position: sticky; top: 0; z-index: 1000; 
+        }
+        .back-link { color: #ff9800; text-decoration: none; font-weight: bold; font-size: 20px; }
+        .balance-box { 
+            background: #222; padding: 6px 15px; border-radius: 20px; 
+            border: 1px solid #444; color: #4caf50; font-size: 14px; font-weight: bold;
+            outline: none; min-width: 80px; text-align: center;
+        }
+
+        .market-container { padding: 10px; }
+        .live-box { 
+            background: #111; margin-bottom: 25px; border: 1px solid #222; 
+            border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        .live-box img { width: 100%; height: auto; display: block; border-bottom: 1px solid #222; }
+        
+        .details-area { padding: 15px; line-height: 1.8; font-size: 15px; }
+
+        /* Editable Lines */
+        .edit-line { border-bottom: 1px dashed #333; display: inline-block; min-width: 50px; outline: none; padding: 0 4px; }
+        .vs-line { font-weight: bold; font-size: 16px; color: #ff9800; border-bottom: 1px solid #333; width: 100%; margin-bottom: 10px; }
+
+        /* Yellow Cashout Box */
+        .cashout-box {
+            background: #ffc107; color: #000; padding: 4px 12px; border-radius: 4px;
+            font-weight: bold; display: inline-block; min-width: 80px; text-align: center;
+            outline: none; margin-left: 5px; box-shadow: 0 2px 5px rgba(255,193,7,0.3);
+        }
+
+        /* Color Logic */
+        .profit-box { color: #4caf50; font-weight: 900; font-size: 16px; }
+        .loss-box { color: #ff5252; font-weight: 900; font-size: 16px; }
+        .spent-box { color: #2196f3; font-weight: bold; } /* Blue color for Spent */
+        
+        .label { color: #888; font-size: 13px; }
+        .row-item { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-nav">
+        <a href="index2.html" class="back-link">←</a>
+        <div style="font-size: 12px; color: #aaa; font-weight: bold;">LIVE MARKET (DEMO)</div>
+        <div class="balance-box" contenteditable="true">₹5,00,000.00</div>
+    </div>
+
+    <div class="market-container">
+
+        <div class="live-box">
+            <img src="image7.png">
+            <div class="details-area">
+                <div class="vs-line" contenteditable="true">KKR vs PBKS</div>
+                <div class="row-item"><span class="label">Match odds:</span> <span class="edit-line" contenteditable="true">1.80</span></div>
+                <div class="row-item"><span class="label">Team1:</span> <span class="edit-line" contenteditable="true">______</span></div>
+                <div class="row-item"><span class="label">Team2:</span> <span class="edit-line" contenteditable="true">______</span></div>
+                
+                <div style="margin: 15px 0; padding: 10px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                    <span class="label">Spent Amt:</span> <span class="edit-line spent-box" contenteditable="true">₹0.00</span><br>
+                    <span class="label">Cashout:</span> <span class="cashout-box" contenteditable="true">₹0.00</span>
+                </div>
+
+                <span class="label">Profit:</span> <span class="edit-line profit-box" contenteditable="true">0.00</span> 
+                &nbsp;&nbsp;
+                <span class="label">Loss:</span> <span class="edit-line loss-box" contenteditable="true">0.00</span>
+            </div>
+        </div>
+
+        <div class="live-box">
+            <img src="image8.png">
+            <div class="details-area">
+                <div class="vs-line" contenteditable="true">MI vs CSK</div>
+                <div class="row-item"><span class="label">Match odds:</span> <span class="edit-line" contenteditable="true">2.10</span></div>
+                <div class="row-item"><span class="label">Team1:</span> <span class="edit-line" contenteditable="true">______</span></div>
+                <div class="row-item"><span class="label">Team2:</span> <span class="edit-line" contenteditable="true">______</span></div>
+                
+                <div style="margin: 15px 0; padding: 10px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                    <span class="label">Spent Amt:</span> <span class="edit-line spent-box" contenteditable="true">₹0.00</span><br>
+                    <span class="label">Cashout:</span> <span class="cashout-box" contenteditable="true">₹0.00</span>
+                </div>
+
+                <span class="label">Profit:</span> <span class="edit-line profit-box" contenteditable="true">0.00</span> 
+                &nbsp;&nbsp;
+                <span class="label">Loss:</span> <span class="edit-line loss-box" contenteditable="true">0.00</span>
+            </div>
+        </div>
+
+        <div class="live-box">
+            <img src="image9.png">
+            <div class="details-area">
+                <div class="vs-line" contenteditable="true">RCB vs SRH</div>
+                <div class="row-item"><span class="label">Match odds:</span> <span class="edit-line" contenteditable="true">1.50</span></div>
+                <div class="row-item"><span class="label">Team1:</span> <span class="edit-line" contenteditable="true">______</span></div>
+                <div class="row-item"><span class="label">Team2:</span> <span class="edit-line" contenteditable="true">______</span></div>
+                
+                <div style="margin: 15px 0; padding: 10px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                    <span class="label">Spent Amt:</span> <span class="edit-line spent-box" contenteditable="true">₹0.00</span><br>
+                    <span class="label">Cashout:</span> <span class="cashout-box" contenteditable="true">₹0.00</span>
+                </div>
+
+                <span class="label">Profit:</span> <span class="edit-line profit-box" contenteditable="true">0.00</span> 
+                &nbsp;&nbsp;
+                <span class="label">Loss:</span> <span class="edit-line loss-box" contenteditable="true">0.00</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Clicking yellow box automatically focuses for typing
+        document.querySelectorAll('.cashout-box').forEach(box => {
+            box.addEventListener('click', function() {
+                if(this.innerText === '₹0.00') this.innerText = '₹';
+            });
+        });
+    </script>
+</body>
+</html>
